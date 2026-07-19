@@ -1,0 +1,14 @@
+{
+  "name": "david-delahaye-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}
+

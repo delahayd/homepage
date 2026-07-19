@@ -1,0 +1,7 @@
+.proof-background{z-index:0;pointer-events:none}
+.hero-copy,.portrait-wrap{position:relative;z-index:1}
+.proof-link-nodes a{pointer-events:auto;cursor:pointer}
+.proof-link-nodes circle{fill:rgba(94,231,247,.12);stroke:var(--cyan);stroke-width:1}
+.proof-link-nodes text{fill:var(--cyan);font:12px var(--mono);letter-spacing:1px}
+.proof-link-nodes a:hover circle{fill:rgba(94,231,247,.45)}
+@media(max-width:960px){.proof-link-nodes{display:none}}
