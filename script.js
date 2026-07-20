@@ -10,22 +10,56 @@ const publications = [
   {year:2015,type:'conference',title:'Automated Deduction in the B Set Theory using Typed Proof Search and Deduction Modulo',authors:'G. Bury, D. Delahaye, D. Doligez, P. Halmagrand, O. Hermant',venue:'LPAR · EPiC Series in Computing 35 · 42–58'},
   {year:2015,type:'conference',title:'Integrating Simplex with Tableaux',authors:'G. Bury, D. Delahaye',venue:'TABLEAUX · LNCS 9323 · 86–101 · Springer'},
   {year:2015,type:'journal',title:'Verifying B Proof Rules using Deep Embedding and Automated Theorem Proving',authors:'M. Jacquel, K. Berkani, D. Delahaye, C. Dubois',venue:'Software and Systems Modeling 14(1) · 101–119'},
-  {year:2014,type:'conference',title:'The BWare Project: Building a Proof Platform for the Automated Verification of B Proof Obligations',authors:'D. Delahaye, C. Dubois, C. Marché, D. Mentré',venue:'ABZ · LNCS 8477 · 290–293 · Springer'},
-  {year:2013,type:'conference',title:'Zenon Modulo: When Achilles Outruns the Tortoise using Deduction Modulo',authors:'D. Delahaye, D. Doligez, F. Gilbert, P. Halmagrand, O. Hermant',venue:'LPAR · LNCS 8312 · 274–290 · Springer'},
-  {year:2013,type:'journal',title:'Recovering Intuition from Automated Formal Proofs using Tableaux with Superdeduction',authors:'D. Delahaye, M. Jacquel',venue:'Electronic Journal of Mathematics and Technology 7(2)'},
-  {year:2012,type:'conference',title:'Producing Certified Functional Code from Inductive Specifications',authors:'P.-N. Tollitte, D. Delahaye, C. Dubois',venue:'CPP · LNCS 7679 · 76–91 · Springer'},
-  {year:2012,type:'conference',title:'Tableaux Modulo Theories using Superdeduction',authors:'M. Jacquel, K. Berkani, D. Delahaye, C. Dubois',venue:'IJCAR · LNCS 7364 · 332–338 · Springer'},
-  {year:2008,type:'journal',title:'A Formal and Sound Transformation from Focal to UML',authors:'D. Delahaye, J.-F. Étienne, V. Viguié Donzeau-Gouge',venue:'Innovations in Systems and Software Engineering 4(3) · 267–274'},
-  {year:2007,type:'conference',title:'Zenon: An Extensible Automated Theorem Prover Producing Checkable Proofs',authors:'R. Bonichon, D. Delahaye, D. Doligez',venue:'LPAR · LNCS 4790 · 151–165 · Springer'},
-  {year:2005,type:'journal',title:'Dealing with Algebraic Expressions over a Field in Coq using Maple',authors:'D. Delahaye, M. Mayero',venue:'Journal of Symbolic Computation 39(5) · 569–592'},
-  {year:2002,type:'conference',title:'Free-Style Theorem Proving',authors:'D. Delahaye',venue:'TPHOLs · LNCS 2410 · 164–181 · Springer'},
-  {year:2000,type:'conference',title:'A Tactic Language for the System Coq',authors:'D. Delahaye',venue:'LPAR · LNCS 1955 · 85–95 · Springer'},
-  {year:1999,type:'conference',title:'Information Retrieval in a Coq Proof Library using Type Isomorphisms',authors:'D. Delahaye',venue:'TYPES · LNCS 1956 · 131–147 · Springer'}
+  {year:2014,type:'conference',title:'The BWare Project: Building a Proof Platform for the Automated Verification of B Proof Obligations',authors:'D. Delahaye, C. Dubois, C. Marché, D. Mentré',venue:'ABZ · LNCS 8477 · 290–293 · Springer',pdf:"bware (ABZ'14).pdf"},
+  {year:2013,type:'conference',title:'Zenon Modulo: When Achilles Outruns the Tortoise using Deduction Modulo',authors:'D. Delahaye, D. Doligez, F. Gilbert, P. Halmagrand, O. Hermant',venue:'LPAR · LNCS 8312 · 274–290 · Springer',pdf:"zen-mod (LPAR'13).pdf"},
+  {year:2013,type:'journal',title:'Recovering Intuition from Automated Formal Proofs using Tableaux with Superdeduction',authors:'D. Delahaye, M. Jacquel',venue:'Electronic Journal of Mathematics and Technology 7(2)',pdf:"sded-proofs (eJMT'13).pdf"},
+  {year:2012,type:'conference',title:'Producing Certified Functional Code from Inductive Specifications',authors:'P.-N. Tollitte, D. Delahaye, C. Dubois',venue:'CPP · LNCS 7679 · 76–91 · Springer',pdf:"relext-coq (CPP'12).pdf"},
+  {year:2012,type:'conference',title:'Tableaux Modulo Theories using Superdeduction',authors:'M. Jacquel, K. Berkani, D. Delahaye, C. Dubois',venue:'IJCAR · LNCS 7364 · 332–338 · Springer',pdf:"tab-sded (IJCAR'12).pdf"},
+  {year:2008,type:'journal',title:'A Formal and Sound Transformation from Focal to UML',authors:'D. Delahaye, J.-F. Étienne, V. Viguié Donzeau-Gouge',venue:'Innovations in Systems and Software Engineering 4(3) · 267–274',pdf:'focal-uml (UML&FM\'08).pdf'},
+  {year:2007,type:'conference',title:'Zenon: An Extensible Automated Theorem Prover Producing Checkable Proofs',authors:'R. Bonichon, D. Delahaye, D. Doligez',venue:'LPAR · LNCS 4790 · 151–165 · Springer',pdf:"zenon (LPAR'07).pdf"},
+  {year:2005,type:'journal',title:'Dealing with Algebraic Expressions over a Field in Coq using Maple',authors:'D. Delahaye, M. Mayero',venue:'Journal of Symbolic Computation 39(5) · 569–592',pdf:"coq-maple (JSC'05).pdf"},
+  {year:2002,type:'conference',title:'Free-Style Theorem Proving',authors:'D. Delahaye',venue:'TPHOLs · LNCS 2410 · 164–181 · Springer',pdf:"lpdt (TPHOLs'02).pdf"},
+  {year:2000,type:'conference',title:'A Tactic Language for the System Coq',authors:'D. Delahaye',venue:'LPAR · LNCS 1955 · 85–95 · Springer',pdf:"ltac (LPAR'00).pdf"},
+  {year:1999,type:'conference',title:'Information Retrieval in a Coq Proof Library using Type Isomorphisms',authors:'D. Delahaye',venue:'TYPES · LNCS 1956 · 131–147 · Springer',pdf:"type-isos (TYPES'99).pdf"}
 ];
-const labels={journal:'Revue',conference:'Conférence',workshop:'Atelier'};
+const labels={journal:'Journal',conference:'Conference',workshop:'Workshop'};
 const list=document.querySelector('#pub-list'), search=document.querySelector('#pub-search'), empty=document.querySelector('#pub-empty');let filter='all';
-function render(){const q=search.value.toLocaleLowerCase('fr');const shown=publications.filter(p=>(filter==='all'||p.type===filter)&&`${p.title} ${p.authors} ${p.venue} ${p.year}`.toLocaleLowerCase('fr').includes(q));list.innerHTML=shown.map(p=>`<article class="pub-item"><span class="year">${p.year}</span><div><h3>${p.title}</h3><p>${p.authors}</p><p>${p.venue}</p></div><span class="pub-type">${labels[p.type]}</span></article>`).join('');empty.hidden=shown.length>0}
+function render(){const q=search.value.toLocaleLowerCase('en');const shown=publications.filter(p=>(filter==='all'||p.type===filter)&&`${p.title} ${p.authors} ${p.venue} ${p.year}`.toLocaleLowerCase('en').includes(q));list.innerHTML=shown.map(p=>`<article class="pub-item"><span class="year">${p.year}</span><div><h3>${p.title}</h3><p>${p.authors}</p><p>${p.venue}</p>${p.pdf?`<a class="pdf-link" href="papers/${encodeURIComponent(p.pdf)}" target="_blank">PDF ↓</a>`:''}</div><span class="pub-type">${labels[p.type]}</span></article>`).join('');empty.hidden=shown.length>0}
 document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelector('[data-filter].active').classList.remove('active');b.classList.add('active');filter=b.dataset.filter;render()}));search.addEventListener('input',render);render();
+const paperArchive=[
+  [2014,'Tableaux Modulo Theories using Superdeduction',"tab-sded (GJASE'14).pdf"],
+  [2014,'The BWare Project',"bware (ABZ'14).pdf"],
+  [2014,'The BWare Project — AFADL',"bware (AFADL'14).pdf"],
+  [2013,'Zenon Modulo',"zen-mod (LPAR'13).pdf"],
+  [2013,'Proof Certification in Zenon Modulo',"zen-mod (IWIL'13).pdf"],
+  [2013,'Recovering Intuition from Automated Formal Proofs',"sded-proofs (eJMT'13).pdf"],
+  [2012,'Producing Certified Functional Code from Inductive Specifications',"relext-coq (CPP'12).pdf"],
+  [2012,'Tableaux Modulo Theories using Superdeduction',"tab-sded (IJCAR'12).pdf"],
+  [2011,'Verifying B Proof Rules',"b2zenon (SEFM'11).pdf"],
+  [2010,'Assisting Users of Proof Assistants — Habilitation Thesis','Delahaye (HDR Thesis).pdf'],
+  [2010,'Certified Functional Code Generation',"rel-exec (JFLA'10).pdf"],
+  [2009,'Developing Structured Libraries using Focal',"focal-mod (MLPA'09).pdf"],
+  [2008,'A Formal and Sound Transformation from Focal to UML','focal-uml (UML&FM\'08).pdf'],
+  [2008,'Producing UML Models from Focal Specifications',"focal-uml (TASE'08).pdf"],
+  [2008,'Formal Modeling of Airport Security Regulations',"edemoi (RELAW'08).pdf"],
+  [2007,'Extracting Purely Functional Contents from Logical Inductive Types',"pred-exec (TPHOLs'07).pdf"],
+  [2007,'Zenon: An Extensible Automated Theorem Prover',"zenon (LPAR'07).pdf"],
+  [2006,'Certifying Airport Security Regulations',"edemoi (FM'06).pdf"],
+  [2006,'Reasoning about Airport Security Regulations',"edemoi (ISoLA'06).pdf"],
+  [2006,'Modeling Airport Security Regulations in Focal',"edemoi (REMO2V'06).pdf"],
+  [2005,'Dealing with Algebraic Expressions over a Field in Coq using Maple',"coq-maple (JSC'05).pdf"],
+  [2005,'Quantifier Elimination over Algebraically Closed Fields',"qelim (Calculemus'05).pdf"],
+  [2005,"Diophantus’ 20th Problem and Fermat’s Last Theorem",'Fermat4 (draft).pdf'],
+  [2004,'Coq as a Teaching Tool',"coq-edu (TSI'04).pdf"],
+  [2002,'Free-Style Theorem Proving',"lpdt (TPHOLs'02).pdf"],
+  [2002,'A Proof-Dedicated Meta-Language',"ltac (LFM'02).pdf"],
+  [2001,'Designing Languages for Proofs and Automation — PhD Thesis','Delahaye (PhD Thesis).pdf'],
+  [2001,'Field: A Decision Procedure for Real Numbers in Coq',"field (JFLA'01).pdf"],
+  [2000,'A Tactic Language for the System Coq',"ltac (LPAR'00).pdf"],
+  [1999,'Information Retrieval in a Coq Proof Library using Type Isomorphisms',"type-isos (TYPES'99).pdf"]
+];
+const archive=document.querySelector('#paper-archive');
+if(archive)archive.innerHTML=paperArchive.map(([year,title,file])=>`<a href="papers/${encodeURIComponent(file)}" target="_blank"><span>${year}</span><strong>${title}</strong><b>PDF ↓</b></a>`).join('');
 const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('#nav');toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open)});nav.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false')});document.querySelector('#year').textContent=new Date().getFullYear();
 
 // Small, dependency-free propositional prover. It parses the usual operators,
@@ -35,13 +69,13 @@ const proverButton=document.querySelector('#run-prover');
 const proverOutput=document.querySelector('#proof-output');
 function tokenize(source){
   const tokens=source.match(/->|[A-Za-z][A-Za-z0-9_]*|[()!&|]/g)||[];
-  if(tokens.join('').length!==source.replace(/\s/g,'').length)throw new Error('Caractère non reconnu.');
+  if(tokens.join('').length!==source.replace(/\s/g,'').length)throw new Error('Unrecognised character.');
   return tokens;
 }
 function parseFormula(source){
   const t=tokenize(source);let i=0;
   const peek=()=>t[i], take=x=>peek()===x?(i++,true):false;
-  function atom(){if(take('(')){const n=imp();if(!take(')'))throw new Error('Parenthèse fermante attendue.');return n}const name=peek();if(!name||!/^[A-Za-z]/.test(name))throw new Error('Proposition attendue.');i++;return{op:'var',name}}
+  function atom(){if(take('(')){const n=imp();if(!take(')'))throw new Error('Closing parenthesis expected.');return n}const name=peek();if(!name||!/^[A-Za-z]/.test(name))throw new Error('Proposition expected.');i++;return{op:'var',name}}
   function neg(){return take('!')?{op:'not',a:neg()}:atom()}
   function and(){let n=neg();while(take('&'))n={op:'and',a:n,b:neg()};return n}
   function or(){let n=and();while(take('|'))n={op:'or',a:n,b:and()};return n}
@@ -53,7 +87,7 @@ function variables(n,set=new Set()){if(n.op==='var')set.add(n.name);else{variabl
 function prove(){
   try{
     const tree=parseFormula(formulaInput.value),vars=variables(tree);
-    if(vars.length>6)throw new Error('Le démonstrateur est limité à 6 propositions.');
+    if(vars.length>6)throw new Error('The demonstrator is limited to 6 propositions.');
     const branches=[];let countermodel=null;
     for(let mask=0;mask<2**vars.length;mask++){
       const valuation=Object.fromEntries(vars.map((name,j)=>[name,Boolean(mask&(1<<j))]));
@@ -62,7 +96,7 @@ function prove(){
     }
     const valid=!countermodel;
     const branchHtml=branches.map((b,index)=>`<div class="proof-step ${b.closes?'closed':'open'}"><span>branch ${String(index+1).padStart(2,'0')}</span> · ${Object.entries(b.valuation).map(([k,v])=>`${k}=${v?'⊤':'⊥'}`).join(', ')} · ${b.closes?'× closed':'○ open'}</div>`).join('');
-    proverOutput.innerHTML=`<div class="proof-result ${valid?'valid':'invalid'}">${valid?'✓ VALID — toutes les branches sont fermées':'○ NOT VALID — contre-modèle trouvé'}</div>${branchHtml}${countermodel?`<div class="proof-result invalid">countermodel = { ${Object.entries(countermodel).map(([k,v])=>`${k}: ${v}`).join(', ')} }</div>`:''}`;
+    proverOutput.innerHTML=`<div class="proof-result ${valid?'valid':'invalid'}">${valid?'✓ VALID — all branches are closed':'○ NOT VALID — countermodel found'}</div>${branchHtml}${countermodel?`<div class="proof-result invalid">countermodel = { ${Object.entries(countermodel).map(([k,v])=>`${k}: ${v}`).join(', ')} }</div>`:''}`;
   }catch(error){proverOutput.innerHTML=`<div class="proof-result invalid">Syntax error: ${error.message}</div>`}
 }
 proverButton?.addEventListener('click',prove);
