@@ -20,18 +20,36 @@
     <a class="brand" href="#accueil" aria-label="Back to the home page"><span class="brand-mark">DD</span><span>David Delahaye</span></a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav id="nav" aria-label="Main navigation">
-      <a href="#recherche">Research</a><a href="#projets">Projects</a><a href="#encadrement">Supervision</a><a href="#publications">Publications</a><a href="#exposes">Talks</a><a href="#enseignement">Teaching</a>
+      <a href="#recherche">Research</a><a href="#projets">Projects</a><a href="#encadrement">Supervision</a><a href="#publications">Publications</a><a href="#exposes">Talks</a><a href="#enseignement">Teaching</a><a href="#responsabilites">Academic service</a><a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero" id="accueil">
-      <div class="proof-background" aria-label="Proof-tree navigation to research work">
+      <div class="proof-background" aria-hidden="true">
         <svg viewBox="0 0 1000 760" preserveAspectRatio="xMidYMid slice">
-          <g class="proof-lines"><path d="M500 64V150M500 150L280 250M500 150L720 250M280 250L160 382M280 250L385 382M720 250L615 382M720 250L840 382M385 382L320 520M385 382L470 520M615 382L550 520M615 382L690 520"/></g>
-          <g class="proof-nodes"><circle cx="500" cy="64" r="8"/><circle cx="500" cy="150" r="8"/><circle cx="280" cy="250" r="8"/><circle cx="720" cy="250" r="8"/><circle cx="160" cy="382" r="8"/><circle cx="385" cy="382" r="8"/><circle cx="615" cy="382" r="8"/><circle cx="840" cy="382" r="8"/><circle cx="320" cy="520" r="8"/><circle cx="470" cy="520" r="8"/><circle cx="550" cy="520" r="8"/><circle cx="690" cy="520" r="8"/></g>
-          <g class="proof-link-nodes"><a href="#publications"><circle cx="160" cy="382" r="18"/><text x="183" y="386">publications</text></a><a href="#projets"><circle cx="840" cy="382" r="18"/><text x="730" y="386">software</text></a><a href="#prover"><circle cx="690" cy="520" r="18"/><text x="713" y="524">run prover</text></a></g>
+          <g class="tableau-proof" transform="translate(480 100) scale(.72)">
+            <g class="tableau-step step-1"><rect x="-174" y="24" width="348" height="42" rx="8"/><text x="0" y="51">¬∃x.P(x) ⇒ ∀y.P(y)</text></g>
+            <path class="tableau-edge edge-1" d="M0 66V92"/>
+            <g class="tableau-step step-2"><rect x="-174" y="92" width="348" height="42" rx="8"/><text x="0" y="119">¬(P(X) ⇒ ∀y.P(y))</text></g>
+            <path class="tableau-edge edge-2" d="M0 134V160"/>
+            <g class="tableau-step step-3"><rect x="-118" y="160" width="236" height="70" rx="8"/><text x="0" y="186">P(X)</text><text x="0" y="214">¬∀y.P(y)</text></g>
+            <path class="tableau-edge edge-3" d="M0 230V256"/>
+            <g class="tableau-step step-4"><rect x="-105" y="256" width="210" height="42" rx="8"/><text x="0" y="283">¬P(f(X))</text></g>
+            <path class="tableau-edge edge-4" d="M0 298V324"/>
+            <g class="tableau-step step-5"><rect x="-174" y="324" width="348" height="42" rx="8"/><text x="0" y="351">¬(P(Y) ⇒ ∀y.P(y))</text></g>
+            <path class="tableau-edge edge-5" d="M0 366V392"/>
+            <g class="tableau-step step-6"><rect x="-118" y="392" width="236" height="70" rx="8"/><text x="0" y="418">P(Y)</text><text x="0" y="446">¬∀y.P(y)</text></g>
+            <path class="tableau-edge edge-6" d="M0 462V488"/>
+            <g class="tableau-step step-7"><circle cx="0" cy="506" r="18"/><path d="M-7 499L7 513M7 499L-7 513"/><text class="tableau-closed" x="30" y="510">Y = f(X)</text></g>
+          </g>
         </svg>
+      </div>
+      <div class="hero-institutions" aria-label="Affiliated institutions">
+        <a href="https://www.umontpellier.fr/" target="_blank" rel="noreferrer" title="University of Montpellier"><img src="assets/um-2026.png" alt="University of Montpellier"></a>
+        <a href="https://sciences.edu.umontpellier.fr/" target="_blank" rel="noreferrer" title="Faculty of Science"><img class="logo-fds" src="assets/fds-2026.jpg" alt="Faculty of Science"></a>
+        <a href="https://www.lirmm.fr/" target="_blank" rel="noreferrer" title="LIRMM"><img src="assets/lirmm-2026.png" alt="LIRMM"></a>
+        <a href="https://www.cnrs.fr/" target="_blank" rel="noreferrer" title="CNRS"><img class="logo-cnrs" src="assets/cnrs-2026.svg" alt="CNRS"></a>
       </div>
       <div class="hero-copy">
         <p class="eyebrow"><span class="live-dot"></span> Professor · Computer Science</p>
@@ -39,10 +57,10 @@
         <p class="lead">Automated reasoning, formal methods<br>and proof engineering.</p>
         <div class="code-line"><span>research.focus</span> = ["deduction", "verification", "proof"];</div>
         <div class="hero-actions"><a class="button primary" href="#recherche">Explore my work</a><a class="button secondary" href="mailto:David.Delahaye@lirmm.fr">Contact me</a></div>
-        <div class="affiliation"><span>University of Montpellier</span><span>LIRMM · UMR 5506</span><span>PIPL Team</span></div>
+        <div class="affiliation"><a href="https://www.umontpellier.fr/" target="_blank" rel="noreferrer">University of Montpellier</a><a href="https://www.lirmm.fr/" target="_blank" rel="noreferrer">LIRMM · UMR 5506</a><a href="https://www.lirmm.fr/teams-en/pipl-en/" target="_blank" rel="noreferrer">PIPL Team</a></div>
       </div>
       <div class="portrait-wrap">
-        <div class="portrait-frame"><img src="assets/david-delahaye-lisbon.png" alt="Portrait of David Delahaye in Lisbon" width="863" height="1822"></div>
+        <div class="portrait-frame"><img src="assets/david-delahaye-lisbon.png" alt="Portrait of David Delahaye in Lisbon" width="863" height="1822"><span class="portrait-event">FLoC 2026, Lisbon</span></div>
         <p class="portrait-note"><span></span> Montpellier · LIRMM</p>
       </div>
       <section class="hero-news" aria-labelledby="news-title">
@@ -70,13 +88,6 @@
       </section>
     </section>
 
-    <section class="institutions" aria-label="Partner institutions">
-      <a href="https://www.umontpellier.fr/" target="_blank" rel="noreferrer"><img src="assets/logo-um.png" alt="University of Montpellier"></a>
-      <a href="https://sciences.edu.umontpellier.fr/" target="_blank" rel="noreferrer"><img src="assets/logo-fds.jpg" alt="Faculty of Science"></a>
-      <a href="https://www.lirmm.fr/" target="_blank" rel="noreferrer"><img src="assets/logo-lirmm.png" alt="LIRMM"></a>
-      <a href="https://www.cnrs.fr/" target="_blank" rel="noreferrer"><img class="cnrs" src="assets/logo-cnrs.png" alt="CNRS"></a>
-    </section>
-
     <section class="section intro-grid" id="recherche">
       <div><p class="eyebrow">Research</p><h2>Proof as a foundation for trust</h2></div>
       <div class="prose"><p>My research lies at the intersection of software engineering and formal methods. Following early work on proof assistants — Coq, now Rocq, and Focalize — I now focus primarily on automated deduction in first-order logic and reasoning modulo theories.</p><p>My goal is twofold: to design efficient proof-search methods and to assess them through concrete tools and reproducible benchmarks.</p></div>
@@ -97,19 +108,16 @@
         <a class="project" href="https://github.com/Deducteam/zenon_modulo/" target="_blank" rel="noreferrer"><span class="status">Open source</span><h3>Zenon Modulo</h3><p>An extension of Zenon for deduction modulo theory and linear arithmetic.</p><b>View repository ↗</b></a>
         <a class="project" href="https://github.com/Gbury/archsat/" target="_blank" rel="noreferrer"><span class="status">Open source</span><h3>ArchSAT</h3><p>An SMT solver combining first-order tableaux with rewriting theories.</p><b>View repository ↗</b></a>
         <a class="project" href="https://github.com/delahayd/tarski/" target="_blank" rel="noreferrer"><span class="status">Benchmark</span><h3>Tarski / GeoCoq</h3><p>Elementary geometry problems and machine-learning-based premise selection.</p><b>View repository ↗</b></a>
+        <a class="project" href="https://anr.fr/Project-ANR-12-INSE-0010" target="_blank" rel="noreferrer"><span class="status">ANR · National coordinator</span><h3>BWare</h3><p>A proof-producing platform for the automated verification of industrial B proof obligations, bringing together first-order provers and SMT solvers.</p><b>View ANR project ↗</b></a>
+        <a class="project" href="https://anr.fr/Project-ANR-21-CE25-0015" target="_blank" rel="noreferrer"><span class="status">Ongoing · ANR</span><h3>ICSPA</h3><p>Confident and interoperable proofs for B, Event-B and TLA+, independently checked through the Dedukti logical framework.</p><b>View ANR project ↗</b></a>
       </div>
-      <details><summary>Earlier research projects</summary><p><strong>BWare</strong> (ANR, overall coordinator, 2012–2016), ENVIEVERTE, Quotient, SSURF, A3PAT, CerPAN (local coordinator at Cédric), ModuLogic and EDEMOI.</p></details>
+      <details><summary>Earlier research projects</summary><p>ENVIEVERTE, Quotient, SSURF, A3PAT, CerPAN (local coordinator at Cédric), ModuLogic and EDEMOI.</p></details>
     </section>
 
-    <section class="section prover" id="prover">
-      <div class="section-heading"><div><p class="eyebrow">Interactive lab · 01</p><h2>Build a tableau.</h2></div><p>Enter a propositional formula. The demonstrator searches for a countermodel through semantic branches, directly in your browser.</p></div>
-      <div class="workbench">
-        <div class="editor-bar"><span class="traffic red"></span><span class="traffic amber"></span><span class="traffic green"></span><span class="tab">tableau.logic</span><span class="runtime">● browser runtime</span></div>
-        <div class="workbench-body">
-          <div class="formula-editor"><span class="line-no">1</span><label for="formula">prove</label><input id="formula" value="(P -> Q) & P -> Q" spellcheck="false" aria-label="Propositional formula"><button id="run-prover">Run tableau <kbd>⌘↵</kbd></button><p class="syntax">Syntax: <code>!</code> not · <code>&amp;</code> and · <code>|</code> or · <code>-></code> implies</p></div>
-          <div class="proof-output" id="proof-output" aria-live="polite"><div class="output-placeholder"><span>λ</span><p>Ready to search for a proof.</p></div></div>
-        </div>
-      </div>
+    <section class="section proofquest" id="proofquest">
+      <div class="proofquest-mark" aria-hidden="true">∀</div>
+      <div><p class="eyebrow">Interactive project · 01</p><h2>ProofQuest</h2><p class="proofquest-lead">A game about logic, proof search and the pleasure of finding the right argument. We are developing ProofQuest as a playful way to discover formal reasoning.</p></div>
+      <div class="proofquest-action"><span>In active development</span><a aria-disabled="true">Play ProofQuest · coming soon</a></div>
     </section>
 
     <section class="section" id="encadrement">
