@@ -27,7 +27,13 @@ Le dossier `dist/` contient tous les fichiers à publier. Pour une vérification
 npm run preview
 ```
 
-Le site peut aussi être servi directement par n’importe quel serveur HTTP statique. Les données bibliographiques sont dans `script.js`; les textes et liens sont dans `index.html`.
+## Publication avec GitHub Pages
+
+Le site est construit et publié automatiquement par GitHub Actions après chaque push sur la branche `main`. Le workflow se trouve dans `.github/workflows/deploy.yml`.
+
+Pour activer la publication la première fois, ouvrir les paramètres du dépôt GitHub, aller dans **Pages**, puis sélectionner **GitHub Actions** comme source dans **Build and deployment**. Le site sera ensuite disponible à l'adresse `https://delahayd.github.io/homepage/`.
+
+Les données bibliographiques sont dans `script.js`; les textes et liens sont dans `index.html`.
 
 ## Sources
 
