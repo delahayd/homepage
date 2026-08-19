@@ -1,4 +1,20 @@
+const themeToggle=document.querySelector('.theme-toggle');
+const themeColor=document.querySelector('meta[name="theme-color"]');
+function setTheme(theme){
+  const dark=theme==='dark';
+  document.documentElement.dataset.theme=dark?'dark':'light';
+  themeToggle.setAttribute('aria-pressed',String(dark));
+  const label=dark?'Switch to light theme':'Switch to dark theme';
+  themeToggle.setAttribute('aria-label',label);themeToggle.title=label;
+  if(themeColor)themeColor.content=dark?'#070b13':'#102a43';
+}
+let savedTheme='light';try{savedTheme=localStorage.getItem('theme')==='dark'?'dark':'light'}catch{}
+setTheme(savedTheme);
+themeToggle.addEventListener('click',()=>{const theme=document.documentElement.dataset.theme==='dark'?'light':'dark';setTheme(theme);try{localStorage.setItem('theme',theme)}catch{}});
+
 const publications = [
+  {year:2026,type:'conference',title:'Pgeon: Generating Tableau-Based Provers from Declarative Specifications of Logical Calculi',authors:'R. Sidhoum, S. Robillard, D. Delahaye',venue:'IJCAR · LNAI 16688 · 98–105 · Springer'},
+  {year:2026,type:'workshop',title:'A Strategy Language for Controlled Proof Search',authors:'R. Sidhoum, S. Robillard, D. Delahaye',venue:'LFMTP @ FLoC · EPTCS 448 · 58–64'},
   {year:2022,type:'conference',title:'Goéland: A Concurrent Tableau-Based Theorem Prover (System Description)',authors:'J. Cailler, J. Rosain, D. Delahaye, S. Robillard, H.-L. Bouziane',venue:'IJCAR · LNCS 13385 · 359–368 · Springer'},
   {year:2020,type:'journal',title:'First-Order Automated Reasoning with Theories: When Deduction Modulo Theory Meets Practice',authors:'G. Burel, G. Bury, R. Cauderlier, D. Delahaye, P. Halmagrand, O. Hermant',venue:'Journal of Automated Reasoning 64(6) · 1001–1050'},
   {year:2020,type:'workshop',title:'Toward the Formal Verification of HILECOP: Formalization and Implementation of Synchronously Executed Petri Nets',authors:'V. Iampietro, D. Andreu, D. Delahaye',venue:'PNSE · CEUR Workshop Proceedings 2651 · 214–215'},
@@ -60,4 +76,8 @@ const paperArchive=[
 ];
 const archive=document.querySelector('#paper-archive');
 if(archive)archive.innerHTML=paperArchive.map(([year,title,file])=>`<a href="papers/${encodeURIComponent(file)}" target="_blank"><span>${year}</span><strong>${title}</strong><b>PDF ↓</b></a>`).join('');
+document.querySelectorAll('.trip-gallery').forEach(gallery=>{
+  const trip=gallery.dataset.trip,title=gallery.dataset.title;
+  gallery.innerHTML=Array.from({length:15},(_,index)=>{const number=index+1;return `<a href="personal/${trip}/${number}.jpg" target="_blank"><img src="personal/${trip}/${number}.jpg" alt="${title} — photograph ${number}" loading="lazy" decoding="async"><span>${String(number).padStart(2,'0')}</span></a>`}).join('');
+});
 const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('#nav');toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open)});nav.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false')});document.querySelector('#year').textContent=new Date().getFullYear();

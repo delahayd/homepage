@@ -6,6 +6,7 @@
   <meta name="description" content="David Delahaye, Professor of Computer Science at the University of Montpellier — formal methods, automated deduction and program verification.">
   <meta name="theme-color" content="#102a43">
   <title>David Delahaye — Professor of Computer Science</title>
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.dataset.theme='dark'}catch{}</script>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,15 +14,19 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="proof-links.css">
   <link rel="stylesheet" href="theme-light.css">
+  <link rel="stylesheet" href="theme-dark.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="brand" href="#accueil" aria-label="Back to the home page"><span class="brand-mark">DD</span><span>David Delahaye</span></a>
+    <div class="header-start">
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch to dark theme"><span aria-hidden="true">☀</span><i aria-hidden="true"></i><span aria-hidden="true">☾</span></button>
+      <a class="brand" href="#accueil" aria-label="Back to the home page"><span class="brand-mark">DD</span><span>David Delahaye</span></a>
+    </div>
     <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav id="nav" aria-label="Main navigation">
       <a class="museum-nav" href="museum.html">3D Museum</a>
-      <a href="#recherche">Research</a><a href="#projets">Projects</a><a href="#encadrement">Supervision</a><a href="#publications">Publications</a><a href="#exposes">Talks</a><a href="#enseignement">Teaching</a><a href="#responsabilites">Academic service</a><a href="#contact">Contact</a>
+      <a href="#recherche">Research</a><a href="#projets">Projects</a><a href="#encadrement">Supervision</a><a href="#publications">Publications</a><a href="#exposes">Talks</a><a href="#enseignement">Teaching</a><a href="#responsabilites">Academic service</a><a href="#personnel">Personal</a><a href="#contact">Contact</a>
     </nav>
   </header>
 
@@ -146,16 +151,35 @@
     </section>
 
     <section class="section talks" id="exposes">
-      <div class="section-heading"><div><p class="eyebrow">Talks & conferences</p><h2>Sharing ideas</h2></div><p>A selection of invited talks, seminars and international conference presentations.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">Talks & conferences</p><h2>Sharing ideas</h2></div><p>Invited talks, seminars and conference presentations, with slides from the former website.</p></div>
+      <h3 class="talk-language">Recent highlights</h3>
       <div class="timeline">
         <article><time>2021</time><div><h3>Proof Day · LIRMM Logic Group</h3><p>Invited talk, Montpellier.</p></div><span>Invited</span></article>
         <article><time>2020</time><div><h3>Science and Distrust</h3><p>Panel discussion at MSH SUD, Montpellier.</p></div><span>Panel</span></article>
         <article><time>2019–2020</time><div><h3>World Logic Day</h3><p>Talks in Montpellier.</p></div><span>Invited</span></article>
-        <article><time>2014</time><div><h3>The BWare Project</h3><p>ABZ, Toulouse — Building a Proof Platform for the Automated Verification of B Proof Obligations.</p></div><span>Conference</span></article>
-        <article><time>2013</time><div><h3>Automated Deduction Modulo</h3><p>PSATTT, Palaiseau.</p></div><span>Invited</span></article>
-        <article><time>2010</time><div><h3>Assisting Users of Proof Assistants</h3><p>Habilitation thesis defence, Paris.</p></div><span>HDR</span></article>
       </div>
-      <details><summary>More presentations from the former website</summary><p>Zenon Modulo (GDR GPL, 2013), Tableaux Modulo Theories (Deducteam, 2012), Trusted Computer Mathematics within Focalize (MAP, 2010), the Focal-to-UML transformation (UML&amp;FM, 2008), and seminars at LIFL, ICube, Loria, ENSEEIHT and Deducteam.</p></details>
+      <h3 class="talk-language"><span>EN</span> Talks in English</h3>
+      <div class="timeline talk-archive">
+        <article><time>Jun 2014</time><div><h3>The BWare Project: Building a Proof Platform for the Automated Verification of B Proof Obligations</h3><p>ABZ'14 · Toulouse, France</p></div><a class="talk-file" href="talks/slides-ABZ14.pdf" target="_blank">PDF ↓</a></article>
+        <article><time>Nov 2013</time><div><h3>Zenon Modulo: When Achilles Outruns the Tortoise using Deduction Modulo</h3><p>GDR GPL · GT LTP · Bordeaux, France</p></div><a class="talk-file" href="talks/slides-LTP13.pdf" target="_blank">PDF ↓</a></article>
+        <article><time>Nov 2013</time><div><h3>Automated Deduction Modulo</h3><p>PSATTT'13 · Invited talk · Palaiseau, France</p></div><a class="talk-file" href="talks/slides-PSATTT13.pdf" target="_blank">PDF ↓</a></article>
+        <article><time>Jun 2012</time><div><h3>Tableaux Modulo Theories using Superdeduction: An Application to the Verification of B Proof Rules with the Zenon Automated Theorem Prover</h3><p>Deducteam seminar · Paris, France</p></div><a class="talk-file" href="talks/slides-Deducteam12.pdf" target="_blank">PDF ↓</a></article>
+        <article><time>Dec 2010</time><div><h3>Assisting Users of Proof Assistants</h3><p>HDR defence · Paris, France</p></div><a class="talk-file" href="talks/slides-HDR10.pdf" target="_blank">PDF ↓</a></article>
+        <article><time>Nov 2010</time><div><h3>Trusted Computer Mathematics within the Focalize Environment</h3><p>MAP'10 · Logroño, Spain</p></div><a class="talk-file" href="talks/slides-MAP10.pdf" target="_blank">PDF ↓</a></article>
+        <article><time>Oct 2008</time><div><h3>A Formal and Sound Transformation from Focal to UML: An Application to Airport Security Regulations</h3><p>UML&amp;FM'08 · Kitakyushu-City, Japan</p></div><a class="talk-file" href="talks/slides-UMLFM08.pdf" target="_blank">PDF ↓</a></article>
+      </div>
+      <h3 class="talk-language"><span>FR</span> Talks in French</h3>
+      <div class="timeline talk-archive" lang="fr">
+        <article><time>Juin 2014</time><div><h3>Le projet BWare : une plate-forme pour la vérification automatique d'obligations de preuve B</h3><p>AFADL'14 · Paris, France</p></div><a class="talk-file" href="talks/slides-AFADL14.pdf" target="_blank">PDF ↓</a></article>
+        <article><time>Juin 2013</time><div><h3>Benchmarks pour les projets de BWare</h3><p>Réunion BWare · Paris, France</p></div><a class="talk-file" href="talks/slides-BWare13.pdf" target="_blank">PDF ↓</a></article>
+        <article><time>Mars 2013</time><div><h3>Animation de sémantiques formelles définies inductivement</h3><p>Séminaire LIFL · Lille, France</p></div><a class="talk-file" href="talks/slides-LIFL13.pdf" target="_blank">PDF ↓</a></article>
+        <article><time>Mars 2013</time><div><h3>Tableaux modulo théories en utilisant la superdéduction</h3><p>Séminaire ICube · Strasbourg, France</p></div><a class="talk-file" href="talks/slides-ICube13.pdf" target="_blank">PDF ↓</a></article>
+        <article><time>Mars 2012</time><div><h3>Tableaux modulo théories en utilisant la superdéduction : une application à la vérification de règles de preuve B avec l'outil de démonstration automatique Zenon</h3><p>Séminaire Loria · Nancy, France</p></div><a class="talk-file" href="talks/slides-Loria12.pdf" target="_blank">PDF ↓</a></article>
+        <article><time>Avr 2011</time><div><h3>Compilation de Focalize</h3><p>Séminaire Deducteam · Paris, France</p></div><a class="talk-file" href="talks/slides-Deducteam11.pdf" target="_blank">PDF ↓</a></article>
+        <article><time>Fév 2011</time><div><h3>Séminaire ENSEEIHT</h3><p>ENSEEIHT · Toulouse, France</p></div><a class="talk-file" href="talks/slides-ENSEEIHT11.pdf" target="_blank">PDF ↓</a></article>
+        <article><time>Juin 2009</time><div><h3>Une introduction à l'environnement Focal</h3><p>Journée Focal · Paris, France</p></div><a class="talk-file" href="talks/slides-Focal09.pdf" target="_blank">PDF ↓</a></article>
+        <article><time>Jan 2006</time><div><h3>Tutoriel Focal</h3><p>JFLA'06 · Tutoriel invité · Pauillac, France</p></div><a class="talk-file" href="talks/slides-JFLA06.ppt" target="_blank">PPT ↓</a></article>
+      </div>
     </section>
 
     <section class="section teaching" id="enseignement">
@@ -168,6 +192,31 @@
       <div><p class="eyebrow">Academic service</p><h2>Serving the community</h2></div>
       <div class="role-list"><article><time>Since 2026</time><h3>Head of the PIPL team</h3><p>LIRMM, Computer Science Department.</p></article><article><time>2021–2024</time><h3>Head of the Computer Science Department</h3><p>Faculty of Science, University of Montpellier.</p></article><article><time>Since 2018</time><h3>Member of CNU Section 27</h3><p>Qualifications, promotions, RIPEC and career reviews.</p></article><article><time>2019–2021</time><h3>Head of the MaREL team</h3><p>LIRMM, Computer Science Department.</p></article></div>
       <details><summary>Outreach, reviewing and committees</summary><p>Hcéres evaluations, ANR reviews, PhD and habilitation committees, GJASE editorial board, GDR GPL thesis prize juries, and programme committees for AFADL, ASE, SETS, TABLEAUX, PxTP and other formal-methods events.</p></details>
+    </section>
+
+    <section class="section personal-section" id="personnel">
+      <div class="section-heading"><div><p class="eyebrow">Beyond research</p><h2>Mountains & expeditions</h2></div><p>A personal archive of mountaineering, treks and expeditions.</p></div>
+      <div class="personal-intro">
+        <p>For many years, mountaineering has been a great passion of mine. I am fortunate to live in France, at the heart of the European Alps and close to the Mont Blanc massif — a remarkable playground for alpinists.</p>
+        <p>My training was guided by Jean-Marie Ohl, a guide with the Association Internationale des Guides du Mont Blanc in Chamonix. My expedition experience was developed with Jean Annequin, a French mountain guide and expedition specialist.</p>
+      </div>
+      <div class="expedition-grid" aria-label="Selected treks and expeditions">
+        <article><time>Nov 2000</time><h3>Piton de la Fournaise</h3><p>Réunion Island · 2,631 m</p></article>
+        <article><time>Aug 2001</time><h3>Mont Blanc</h3><p>France · 4,807 m · Highest peak in the Alps</p></article>
+        <article><time>Aug 2003</time><h3>Kilimanjaro</h3><p>Tanzania · 5,963 m · Highest peak in Africa</p></article>
+        <article><time>Aug 2004</time><h3>Ausangate</h3><p>Peru · 6,384 m · Highest peak in the Cordillera Vilcanota</p></article>
+        <article><time>Jan 2005</time><h3>Aconcagua</h3><p>Argentina · 6,962 m · Highest peak in the Americas</p></article>
+        <article><time>Aug 2005</time><h3>Teide</h3><p>Tenerife · 3,718 m · Highest peak in Spain</p></article>
+        <article><time>Nov 2007</time><h3>Aragats</h3><p>Armenia · 4,095 m · Highest peak in Armenia</p></article>
+        <article><time>Aug 2008</time><h3>La Soufrière</h3><p>Guadeloupe · 1,467 m · Highest peak in Guadeloupe</p></article>
+      </div>
+      <div class="photo-archive">
+        <div><p class="eyebrow">Photo archive</p><h3>Four journeys · 60 photographs</h3></div>
+        <details open><summary>Kilimanjaro <span>15 photographs</span></summary><div class="trip-gallery" data-trip="kilimanjaro" data-title="Kilimanjaro"></div></details>
+        <details><summary>Aconcagua <span>15 photographs</span></summary><div class="trip-gallery" data-trip="aconcagua" data-title="Aconcagua"></div></details>
+        <details><summary>Aragats <span>15 photographs</span></summary><div class="trip-gallery" data-trip="aragats" data-title="Aragats"></div></details>
+        <details><summary>La Soufrière <span>15 photographs</span></summary><div class="trip-gallery" data-trip="soufriere" data-title="La Soufrière"></div></details>
+      </div>
     </section>
 
     <section class="contact" id="contact">

@@ -26,7 +26,7 @@ nav a{color:#52697d}nav a:before{color:#9cb0c0}nav a:hover{color:#087f96}.menu-t
 .museum-button{background:#172f46;color:#e8fbff;border:1px solid #356d78;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)}
 .museum-button:hover{background:#22445c;transform:translateY(-2px)}
 .museum-nav{background:#17384a!important;color:#dffbff!important;border-color:#397f88!important}
-.museum-nav:before{content:"3D"!important;color:#7fe2e9!important;margin-right:.35rem}
+.museum-nav:before{display:none}
 .proof-background{opacity:.26}.proof-lines path{stroke:#6b9bb3}.proof-nodes circle{fill:#f4f7fb;stroke:#087f96}.proof-link-nodes text{fill:#087f96}.proof-link-nodes circle{fill:rgba(8,127,150,.08);stroke:#087f96}
 .portrait-frame{position:relative;background:#c8d5df;box-shadow:0 22px 55px rgba(38,61,80,.24)}
 .portrait-event{position:absolute;right:.5rem;bottom:.45rem;padding:.12rem .28rem;background:transparent;color:rgba(18,43,63,.82);font:italic 500 .69rem var(--sans);letter-spacing:.015em;text-shadow:0 1px 2px rgba(255,255,255,.62)}
@@ -154,6 +154,6 @@ nav a:hover:before,nav a:focus-visible:before{color:#397f88}
 @keyframes tableau-s6{0%,63%{opacity:0}64%,92%{opacity:1}100%{opacity:0}}
 @keyframes tableau-s7{0%,75%{opacity:0}76%,92%{opacity:1}100%{opacity:0}}
 @media(prefers-reduced-motion:reduce){.tableau-step,.tableau-edge{opacity:1;animation:none}}
-@media(max-width:1180px){.menu-toggle{display:block;border:0;background:transparent;font:inherit}.site-header nav{display:none;position:absolute;top:70px;left:0;right:0;background:#eef2f4;padding:1.5rem;flex-direction:column;border-bottom:1px solid var(--line)}.site-header nav.open{display:flex}}
+@media(max-width:1500px){.menu-toggle{display:block;border:0;background:transparent;font:inherit}.site-header nav{display:none;position:absolute;top:70px;left:0;right:0;background:#eef2f4;padding:1.5rem;flex-direction:column;border-bottom:1px solid var(--line)}.site-header nav.open{display:flex}}
 @media(max-width:960px){.proof-background{display:none}}
 @media(max-width:620px){.hero h1{font-size:3.65rem;letter-spacing:-.065em}.hero h1 em{letter-spacing:-.065em}.hero{row-gap:1.4rem;padding-bottom:2rem}.proof-background{display:none}}

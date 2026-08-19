@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "typecheck": "tsc --noEmit",
-    "build": "vite build && cp -R papers dist/papers",
+    "build": "vite build && cp -R papers talks personal dist/",
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
