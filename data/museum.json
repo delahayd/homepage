@@ -1,0 +1,65 @@
+{
+  "museumTitle": "The Proof Museum",
+  "rooms": [
+    {
+      "id": "hall",
+      "number": "00",
+      "title": "Hall of Proof",
+      "subtitle": "David Delahaye · Automated reasoning & formal methods",
+      "accent": "#62d7df",
+      "position": [0, 1.65, -8],
+      "items": [
+        {"title": "Welcome", "text": "A compact retro-scientific museum. Explore four thematic rooms branching from this central hall.", "link": "index.html#accueil", "label": "Open the classic homepage"},
+        {"title": "Research focus", "text": "Deduction, verification and proof engineering — from logical foundations to reproducible tools.", "link": "index.html#recherche", "label": "Read the research overview"}
+      ]
+    },
+    {
+      "id": "research",
+      "number": "01",
+      "title": "Research Lab",
+      "subtitle": "Ideas, calculi and proof systems",
+      "accent": "#8dd7a8",
+      "position": [-11, 1.65, -3],
+      "items": [
+        {"title": "Automated deduction", "text": "Concurrent tableaux, deduction modulo theory, superdeduction and proof certification."},
+        {"title": "Formal methods", "text": "Modelling and verification of critical systems, certified compilation and program proofs.", "link": "index.html#recherche", "label": "Explore research"}
+      ]
+    },
+    {
+      "id": "projects",
+      "number": "02",
+      "title": "Machine Room",
+      "subtitle": "Software & research projects",
+      "accent": "#e4b56f",
+      "position": [11, 1.65, -3],
+      "items": [
+        {"title": "Goéland", "text": "A concurrent first-order tableau prover and CASC best newcomer.", "link": "https://github.com/GoelandProver/Goeland/", "label": "View repository"},
+        {"title": "Pgeon · Zenon Modulo · ArchSAT", "text": "A family of tools exploring generated provers, deduction modulo and SMT.", "link": "index.html#projets", "label": "See every project"}
+      ]
+    },
+    {
+      "id": "publications",
+      "number": "03",
+      "title": "Archive",
+      "subtitle": "Selected publications & talks",
+      "accent": "#bba0e7",
+      "position": [-11, 1.65, 10],
+      "items": [
+        {"title": "Proof literature", "text": "Work spanning proof assistants, automated deduction, B set theory and software architecture.", "link": "index.html#publications", "label": "Browse publications"},
+        {"title": "Talks & conferences", "text": "Invited talks, seminars and international presentations.", "link": "index.html#exposes", "label": "Browse talks"}
+      ]
+    },
+    {
+      "id": "teaching",
+      "number": "04",
+      "title": "Classroom",
+      "subtitle": "Teaching, supervision & service",
+      "accent": "#ef8f91",
+      "position": [11, 1.65, 10],
+      "items": [
+        {"title": "From logic to safe software", "text": "Courses from functional programming and first-order logic to compilation and automated verification.", "link": "index.html#enseignement", "label": "See teaching"},
+        {"title": "People & community", "text": "Doctoral supervision, academic responsibilities and service to the research community.", "link": "index.html#encadrement", "label": "See supervision"}
+      ]
+    }
+  ]
+}

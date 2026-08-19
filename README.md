@@ -5,10 +5,15 @@ Site statique responsive, sans backend. Les contenus ont été consolidés depui
 ## Tester en local
 
 ```bash
-python3 -m http.server 8000
+npm run dev
 ```
 
-Ouvrir ensuite `http://localhost:8000`. Aucun prérequis ni installation de dépendance n’est nécessaire.
+Ouvrir ensuite :
+
+- `http://localhost:5173/` pour la page principale ;
+- `http://localhost:5173/museum.html` pour le musée 3D.
+
+Les dépendances doivent avoir été installées au préalable avec `npm install`.
 
 ## Construire pour la mise en ligne
 

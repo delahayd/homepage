@@ -23,6 +23,10 @@ nav a{color:#52697d}nav a:before{color:#9cb0c0}nav a:hover{color:#087f96}.menu-t
 .lead{color:#4f6579}.code-line{color:#687f94}.affiliation,.portrait-note{color:#6c8296}.affiliation a{text-decoration:none;transition:color .2s}.affiliation a:before{content:"◆";color:#78a9b8;margin-right:.45rem}.affiliation a:hover{color:#087f96}
 .primary{background:#397f88;color:white;box-shadow:0 8px 24px rgba(48,91,101,.2)}.primary:hover{box-shadow:0 12px 30px rgba(48,91,101,.3)}
 .secondary{background:#f4f1ec;border-color:#9fadb8;color:#263f56}
+.museum-button{background:#172f46;color:#e8fbff;border:1px solid #356d78;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)}
+.museum-button:hover{background:#22445c;transform:translateY(-2px)}
+.museum-nav{background:#17384a!important;color:#dffbff!important;border-color:#397f88!important}
+.museum-nav:before{content:"3D"!important;color:#7fe2e9!important;margin-right:.35rem}
 .proof-background{opacity:.26}.proof-lines path{stroke:#6b9bb3}.proof-nodes circle{fill:#f4f7fb;stroke:#087f96}.proof-link-nodes text{fill:#087f96}.proof-link-nodes circle{fill:rgba(8,127,150,.08);stroke:#087f96}
 .portrait-frame{position:relative;background:#c8d5df;box-shadow:0 22px 55px rgba(38,61,80,.24)}
 .portrait-event{position:absolute;right:.5rem;bottom:.45rem;padding:.12rem .28rem;background:transparent;color:rgba(18,43,63,.82);font:italic 500 .69rem var(--sans);letter-spacing:.015em;text-shadow:0 1px 2px rgba(255,255,255,.62)}
