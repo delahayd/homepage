@@ -39,3 +39,4 @@ html[data-theme="dark"] .proofquest{background:linear-gradient(135deg,#101d2a,#1
 @media(max-width:620px){.talk-archive article{grid-template-columns:1fr}.talk-file{justify-self:start;margin-top:.4rem}}
 @media(max-width:900px){.expedition-grid{grid-template-columns:1fr 1fr}.trip-gallery{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:620px){.personal-intro{grid-template-columns:1fr}.expedition-grid{grid-template-columns:1fr 1fr}.trip-gallery{grid-template-columns:1fr 1fr}.photo-archive{margin-top:3rem}}
+html[data-theme="dark"] .social-profiles a{border-color:#314b60;color:#91a9bb}html[data-theme="dark"] .social-profiles a:hover{border-color:var(--cyan);color:var(--cyan)}

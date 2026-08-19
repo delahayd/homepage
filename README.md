@@ -11,7 +11,7 @@ npm run dev
 Ouvrir ensuite :
 
 - `http://localhost:5173/` pour la page principale ;
-- `http://localhost:5173/museum.html` pour le musée 3D.
+- `http://localhost:5173/museum.html` pour jouer à Publish or Perish 3D.
 
 Les dépendances doivent avoir été installées au préalable avec `npm install`.
 

@@ -157,3 +157,4 @@ nav a:hover:before,nav a:focus-visible:before{color:#397f88}
 @media(max-width:1500px){.menu-toggle{display:block;border:0;background:transparent;font:inherit}.site-header nav{display:none;position:absolute;top:70px;left:0;right:0;background:#eef2f4;padding:1.5rem;flex-direction:column;border-bottom:1px solid var(--line)}.site-header nav.open{display:flex}}
 @media(max-width:960px){.proof-background{display:none}}
 @media(max-width:620px){.hero h1{font-size:3.65rem;letter-spacing:-.065em}.hero h1 em{letter-spacing:-.065em}.hero{row-gap:1.4rem;padding-bottom:2rem}.proof-background{display:none}}
+.social-profiles{display:flex;gap:.65rem;flex-wrap:wrap;margin-top:1rem}.social-profiles a{padding:.42rem .65rem;border:1px solid #91a8b8;border-radius:4px;color:#526f82;text-decoration:none;font:600 .65rem var(--mono);transition:.2s}.social-profiles a:hover{border-color:#087f96;color:#087f96;transform:translateY(-1px)}.social-profiles+.affiliation{margin-top:2rem}

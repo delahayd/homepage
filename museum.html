@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore David Delahaye's research, projects, publications and teaching in a retro 3D scientific museum.">
+  <meta name="description" content="Play Publish or Perish 3D, a retro scientific FPS exploring David Delahaye's research, projects, publications and teaching.">
   <meta name="theme-color" content="#070d14">
-  <title>The Proof Museum — David Delahaye</title>
+  <title>Publish or Perish 3D — David Delahaye</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,31 +13,30 @@
   <link rel="stylesheet" href="museum.css">
 </head>
 <body>
-  <main id="museum" aria-label="Interactive 3D museum">
+  <main id="museum" aria-label="Publish or Perish 3D interactive game">
     <canvas id="scene"></canvas>
     <div class="pixel-grid" aria-hidden="true"></div>
     <header class="museum-header">
       <a class="classic-link" href="index.html">← Classic view</a>
-      <div><span>THE PROOF MUSEUM</span><small>David Delahaye · LIRMM</small></div>
+      <div><span>PUBLISH OR PERISH 3D</span><small>David Delahaye · LIRMM</small></div>
       <button id="map-toggle" type="button" aria-expanded="true">Map <kbd>M</kbd></button>
     </header>
     <aside id="minimap" aria-label="Museum map">
       <strong>FLOOR 01</strong>
       <div class="map-grid">
-        <span class="map-room archive">03<br>Archive</span><span class="map-room teaching">04<br>Classroom</span>
-        <span class="map-room research">01<br>Research</span><span class="map-room projects">02<br>Projects</span>
-        <span class="map-room hall">00 · Hall</span>
+        <div id="map-rooms"></div>
         <i id="map-player" aria-label="Your position"></i>
       </div>
     </aside>
     <div id="crosshair" aria-hidden="true"></div>
+    <div id="combat-hud" aria-label="Combat status"><span>Integrity <strong id="player-health">100</strong>%</span><span>Sentinels <strong id="enemy-count">0</strong></span></div>
     <div id="prompt" role="status">Click to enter the museum</div>
     <section id="intro" class="modal-card">
       <p class="kicker">AN INTERACTIVE PORTFOLIO · FLOOR 01</p>
-      <h1>The Proof<br>Museum</h1>
-      <p>Five compact spaces about research, software, publications and teaching. Walk up to an illuminated panel to inspect it.</p>
-      <div class="controls"><span><kbd>WASD</kbd> Move</span><span><kbd>Mouse</kbd> Look</span><span><kbd>E</kbd> Read</span><span><kbd>Esc</kbd> Pause</span></div>
-      <button id="enter" type="button">Enter museum <span>→</span></button>
+      <h1>Publish or<br>Perish 3D</h1>
+      <p>This place brings together the main chapters of my career. Unfortunately, it has been overrun by researchers determined to make us publish at any cost. Clear them out so you can explore the information on this site in peace—and, above all, so we can get back to doing our research without interruption.</p>
+      <div class="controls"><span><kbd>↑ ↓</kbd> Move</span><span><kbd>← →</kbd> Turn</span><span><kbd>Alt + ← →</kbd> Strafe</span><span><kbd>Mouse</kbd> Look</span><span><kbd>Right click</kbd> Forward</span><span><kbd>Left click</kbd> Fire</span><span><kbd>Shift</kbd> Sprint</span><span><kbd>E</kbd> Read</span></div>
+      <button id="enter" type="button">Start game <span>→</span></button>
       <a href="index.html">Prefer the accessible classic view?</a>
     </section>
     <section id="info-panel" class="modal-card info-card" hidden aria-live="polite">
@@ -46,6 +45,12 @@
       <h2 id="panel-title"></h2>
       <p id="panel-text"></p>
       <a id="panel-link" href="#">Continue in the classic site <span>↗</span></a>
+    </section>
+    <section id="death-panel" class="modal-card death-card" hidden aria-live="assertive">
+      <p class="kicker">EXPERIMENT INTERRUPTED</p>
+      <h2>Integrity lost</h2>
+      <p>You can return to the museum entrance. Sentinels already neutralized will remain offline.</p>
+      <button id="revive" type="button">Revive at entrance <span>→</span></button>
     </section>
     <div class="touch-controls" aria-label="Touch controls">
       <button data-move="forward" aria-label="Move forward">▲</button>
