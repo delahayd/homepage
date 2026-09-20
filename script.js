@@ -81,3 +81,34 @@ document.querySelectorAll('.trip-gallery').forEach(gallery=>{
   gallery.innerHTML=Array.from({length:15},(_,index)=>{const number=index+1;return `<a href="personal/${trip}/${number}.jpg" target="_blank"><img src="personal/${trip}/${number}.jpg" alt="${title} — photograph ${number}" loading="lazy" decoding="async"><span>${String(number).padStart(2,'0')}</span></a>`}).join('');
 });
 const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('#nav');toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open)});nav.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false')});document.querySelector('#year').textContent=new Date().getFullYear();
+
+const portraitFrame=document.querySelector('.portrait-frame');
+const portraitImage=document.querySelector('.portrait-image');
+if(portraitFrame&&portraitImage){
+  const originalPortrait={src:portraitImage.src,alt:portraitImage.alt};
+  const hoverPortraits=[
+    {src:new URL('./assets/portrait-hover-1.png',import.meta.url).href,alt:'Theorem adventurer on a Mediterranean rooftop'},
+    {src:new URL('./assets/portrait-hover-2.png',import.meta.url).href,alt:'Logic researcher overlooking his city and ideas'}
+  ];
+  hoverPortraits.forEach(({src})=>{const image=new Image();image.src=src});
+  let portraitTimer;
+  let portraitIndex=0;
+  const showHoverPortrait=()=>{
+    const portrait=hoverPortraits[portraitIndex];
+    portraitImage.src=portrait.src;
+    portraitImage.alt=portrait.alt;
+    portraitIndex=(portraitIndex+1)%hoverPortraits.length;
+  };
+  portraitFrame.addEventListener('mouseenter',()=>{
+    portraitFrame.classList.add('is-cycling');
+    portraitIndex=0;
+    showHoverPortrait();
+    portraitTimer=window.setInterval(showHoverPortrait,3000);
+  });
+  portraitFrame.addEventListener('mouseleave',()=>{
+    window.clearInterval(portraitTimer);
+    portraitFrame.classList.remove('is-cycling');
+    portraitImage.src=originalPortrait.src;
+    portraitImage.alt=originalPortrait.alt;
+  });
+}
