@@ -1,0 +1,73 @@
+{
+  "retrieved": "2026-10-20",
+  "files": [
+    {
+      "file": "goeland-ijcar-2022.pdf",
+      "title": "Goéland: A Concurrent Tableau-Based Theorem Prover (System Description)",
+      "hal": "https://hal.science/lirmm-03793406",
+      "download": "https://hal.science/lirmm-03793406/document"
+    },
+    {
+      "file": "deduction-modulo-jar-2020.pdf",
+      "title": "First-order automated reasoning with theories: when deduction modulo theory meets practice",
+      "hal": "https://hal.science/hal-02305831",
+      "download": "https://hal.science/hal-02305831/document"
+    },
+    {
+      "file": "hilecop-pnse-2020.pdf",
+      "title": "Toward the Formal Verification of HILECOP: Formalization and Implementation of Synchronously Executed Petri Nets",
+      "download": "https://ceur-ws.org/Vol-2651/posterextabs1.pdf",
+      "note": "PNSE 2020 extended abstract, pp. 214–215; the HAL deposit is a different research report."
+    },
+    {
+      "file": "variability-iccs-2019.pdf",
+      "title": "Graph-Based Variability Modelling: Towards a Classification of Existing Formalisms",
+      "hal": "https://hal.science/lirmm-02092134",
+      "download": "https://hal.science/lirmm-02092134/document"
+    },
+    {
+      "file": "set-theory-abz-2018.pdf",
+      "title": "An Automation-Friendly Set Theory for the B Method",
+      "hal": "https://hal.science/hal-02082755",
+      "download": "https://hal.science/hal-02082755/document"
+    },
+    {
+      "file": "smt-tableau-rewriting-2018.pdf",
+      "title": "SMT Solving Modulo Tableau and Rewriting Theories",
+      "hal": "https://hal.science/hal-02083232",
+      "download": "https://hal.science/hal-02083232/document"
+    },
+    {
+      "file": "architectures-seke-2018.pdf",
+      "title": "Recovering Three-Level Architectures from the Code of Open-Source Java Spring Projects",
+      "hal": "https://hal.science/hal-01872239",
+      "download": "https://hal.science/hal-01872239/document"
+    },
+    {
+      "file": "version-propagation-seke-2017.pdf",
+      "title": "Substitutability-Based Version Propagation to Manage the Evolution of Three-Level Component-Based Architectures",
+      "hal": "https://hal.science/lirmm-01580889",
+      "download": "https://hal.science/lirmm-01580889/document"
+    },
+    {
+      "file": "b-set-theory-lpar-2015.pdf",
+      "title": "Automated Deduction in the B Set Theory using Typed Proof Search and Deduction Modulo",
+      "hal": "https://hal.science/hal-01204701",
+      "download": "https://hal.science/hal-01204701/document"
+    },
+    {
+      "file": "simplex-tableaux-2015.pdf",
+      "title": "Integrating Simplex with Tableaux",
+      "hal": "https://hal.science/hal-01215490",
+      "download": "https://hal.science/hal-01215490/document"
+    }
+  ],
+  "unresolved": [
+    {
+      "title": "Verifying B Proof Rules using Deep Embedding and Automated Theorem Proving",
+      "venue": "Software and Systems Modeling 14(1), 101–119 (2015)",
+      "doi": "10.1007/s10270-013-0322-z",
+      "note": "HAL search returned only the SEFM 2011 record without a PDF. The journal PDF indexed on perso.crans.org was blocked by an anti-bot page; no conference PDF substituted."
+    }
+  ]
+}
